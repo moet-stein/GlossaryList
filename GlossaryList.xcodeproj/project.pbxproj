@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		602D1D5827C9283700488C41 /* IngredientsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602D1D5727C9283700488C41 /* IngredientsListViewController.swift */; };
+		602D1D5A27C9293A00488C41 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602D1D5927C9293A00488C41 /* ShoppingListViewController.swift */; };
 		607184FD27C921EF0096757D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607184FC27C921EF0096757D /* AppDelegate.swift */; };
 		607184FF27C921EF0096757D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607184FE27C921EF0096757D /* SceneDelegate.swift */; };
-		6071850127C921EF0096757D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071850027C921EF0096757D /* ViewController.swift */; };
-		6071850427C921EF0096757D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6071850227C921EF0096757D /* Main.storyboard */; };
+		6071850127C921EF0096757D /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071850027C921EF0096757D /* FoodListViewController.swift */; };
+		6071850427C921EF0096757D /* FoodViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6071850227C921EF0096757D /* FoodViewController.storyboard */; };
 		6071850727C921EF0096757D /* GlossaryList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6071850527C921EF0096757D /* GlossaryList.xcdatamodeld */; };
 		6071850927C921F00096757D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6071850827C921F00096757D /* Assets.xcassets */; };
 		6071850C27C921F00096757D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6071850A27C921F00096757D /* LaunchScreen.storyboard */; };
+		6071851827C9228B0096757D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6071851627C9228B0096757D /* DataModel.xcdatamodeld */; };
+		60B4B91D27CD326100027A4C /* FoodCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4B91C27CD326100027A4C /* FoodCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		602D1D5727C9283700488C41 /* IngredientsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsListViewController.swift; sourceTree = "<group>"; };
+		602D1D5927C9293A00488C41 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		607184F927C921EF0096757D /* GlossaryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlossaryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607184FC27C921EF0096757D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607184FE27C921EF0096757D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6071850027C921EF0096757D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6071850327C921EF0096757D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6071850027C921EF0096757D /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
+		6071850327C921EF0096757D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FoodViewController.storyboard; sourceTree = "<group>"; };
 		6071850627C921EF0096757D /* GlossaryList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GlossaryList.xcdatamodel; sourceTree = "<group>"; };
 		6071850827C921F00096757D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6071850B27C921F00096757D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6071850D27C921F00096757D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6071851727C9228B0096757D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		60B4B91C27CD326100027A4C /* FoodCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,60 @@
 		607184FB27C921EF0096757D /* GlossaryList */ = {
 			isa = PBXGroup;
 			children = (
-				607184FC27C921EF0096757D /* AppDelegate.swift */,
-				607184FE27C921EF0096757D /* SceneDelegate.swift */,
-				6071850027C921EF0096757D /* ViewController.swift */,
-				6071850227C921EF0096757D /* Main.storyboard */,
+				6071851527C922790096757D /* Data Model */,
+				60D4DDA227CD2DE100068581 /* Scenes */,
 				6071850827C921F00096757D /* Assets.xcassets */,
 				6071850A27C921F00096757D /* LaunchScreen.storyboard */,
+				607184FE27C921EF0096757D /* SceneDelegate.swift */,
+				607184FC27C921EF0096757D /* AppDelegate.swift */,
 				6071850D27C921F00096757D /* Info.plist */,
 				6071850527C921EF0096757D /* GlossaryList.xcdatamodeld */,
 			);
 			path = GlossaryList;
+			sourceTree = "<group>";
+		};
+		6071851527C922790096757D /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				6071851627C9228B0096757D /* DataModel.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		60D4DDA227CD2DE100068581 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				60D4DDA327CD2DED00068581 /* FoodViewController */,
+				60D4DDA527CD2EC100068581 /* ShoppingListViewController */,
+				60D4DDA427CD2E5200068581 /* IngredientsViewController */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		60D4DDA327CD2DED00068581 /* FoodViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6071850227C921EF0096757D /* FoodViewController.storyboard */,
+				6071850027C921EF0096757D /* FoodListViewController.swift */,
+				60B4B91C27CD326100027A4C /* FoodCollectionView.swift */,
+			);
+			path = FoodViewController;
+			sourceTree = "<group>";
+		};
+		60D4DDA427CD2E5200068581 /* IngredientsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				602D1D5727C9283700488C41 /* IngredientsListViewController.swift */,
+			);
+			path = IngredientsViewController;
+			sourceTree = "<group>";
+		};
+		60D4DDA527CD2EC100068581 /* ShoppingListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				602D1D5927C9293A00488C41 /* ShoppingListViewController.swift */,
+			);
+			path = ShoppingListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +182,7 @@
 			files = (
 				6071850C27C921F00096757D /* LaunchScreen.storyboard in Resources */,
 				6071850927C921F00096757D /* Assets.xcassets in Resources */,
-				6071850427C921EF0096757D /* Main.storyboard in Resources */,
+				6071850427C921EF0096757D /* FoodViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6071850127C921EF0096757D /* ViewController.swift in Sources */,
+				6071850127C921EF0096757D /* FoodListViewController.swift in Sources */,
+				6071851827C9228B0096757D /* DataModel.xcdatamodeld in Sources */,
 				6071850727C921EF0096757D /* GlossaryList.xcdatamodeld in Sources */,
+				602D1D5A27C9293A00488C41 /* ShoppingListViewController.swift in Sources */,
+				602D1D5827C9283700488C41 /* IngredientsListViewController.swift in Sources */,
+				60B4B91D27CD326100027A4C /* FoodCollectionView.swift in Sources */,
 				607184FD27C921EF0096757D /* AppDelegate.swift in Sources */,
 				607184FF27C921EF0096757D /* SceneDelegate.swift in Sources */,
 			);
@@ -151,12 +207,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6071850227C921EF0096757D /* Main.storyboard */ = {
+		6071850227C921EF0096757D /* FoodViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6071850327C921EF0096757D /* Base */,
 			);
-			name = Main.storyboard;
+			name = FoodViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		6071850A27C921F00096757D /* LaunchScreen.storyboard */ = {
@@ -298,7 +354,7 @@
 				INFOPLIST_FILE = GlossaryList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = FoodViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +382,7 @@
 				INFOPLIST_FILE = GlossaryList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = FoodViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,6 +429,16 @@
 			);
 			currentVersion = 6071850627C921EF0096757D /* GlossaryList.xcdatamodel */;
 			path = GlossaryList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		6071851627C9228B0096757D /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6071851727C9228B0096757D /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 6071851727C9228B0096757D /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
