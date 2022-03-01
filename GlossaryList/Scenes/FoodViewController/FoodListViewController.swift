@@ -80,10 +80,23 @@ extension FoodListViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as! FoodCollectionView
-        
         cell.setup(foodModel: foodArray[indexPath.item])
         return cell
     }
-        
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+       
+        let columns: CGFloat = 2
+        let collectionViewWidth = collectionView.bounds.width
+        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        let spaceBetweenCells = flowLayout.minimumInteritemSpacing * (columns - 1)
+        let adjustedWidth = collectionViewWidth - spaceBetweenCells
+        let width: CGFloat = floor(adjustedWidth / columns)
+        let height: CGFloat = 150
+        return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToIngredients", sender: self)
+    }
 }

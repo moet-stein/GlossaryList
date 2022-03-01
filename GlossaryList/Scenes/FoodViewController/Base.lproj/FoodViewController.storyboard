@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pXS-bA-LeE">
-                                <rect key="frame" x="20" y="104" width="374" height="195"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pXS-bA-LeE">
+                                <rect key="frame" x="10" y="98" width="394" height="764"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qub-gu-0Xu">
                                     <size key="itemSize" width="173" height="111"/>
@@ -35,23 +34,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="173" height="111"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQa-EQ-em0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="111"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQa-EQ-em0">
+                                                    <rect key="frame" x="58" y="10" width="57" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IngredientsAmount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTN-OU-Alx">
+                                                    <rect key="frame" x="14" y="47" width="145" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="PQa-EQ-em0" secondAttribute="bottom" id="34D-I6-vs5"/>
-                                                <constraint firstItem="PQa-EQ-em0" firstAttribute="leading" secondItem="s90-kf-VP7" secondAttribute="leading" id="LrH-fS-aD6"/>
-                                                <constraint firstItem="PQa-EQ-em0" firstAttribute="top" secondItem="s90-kf-VP7" secondAttribute="top" id="igN-w6-zMg"/>
-                                                <constraint firstAttribute="trailing" secondItem="PQa-EQ-em0" secondAttribute="trailing" id="wlr-G5-IY6"/>
+                                                <constraint firstItem="YTN-OU-Alx" firstAttribute="centerX" secondItem="PQa-EQ-em0" secondAttribute="centerX" id="7ik-B6-o6V"/>
+                                                <constraint firstItem="YTN-OU-Alx" firstAttribute="top" secondItem="PQa-EQ-em0" secondAttribute="bottom" constant="8" symbolic="YES" id="P6J-qm-qcL"/>
+                                                <constraint firstAttribute="bottom" secondItem="YTN-OU-Alx" secondAttribute="bottom" constant="23" id="Q9U-Et-azG"/>
+                                                <constraint firstItem="PQa-EQ-em0" firstAttribute="top" secondItem="s90-kf-VP7" secondAttribute="top" constant="10" id="VpZ-Od-YDi"/>
+                                                <constraint firstItem="YTN-OU-Alx" firstAttribute="centerX" secondItem="s90-kf-VP7" secondAttribute="centerX" id="Y0s-qV-bLN"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="173" height="111"/>
                                         <connections>
                                             <outlet property="foodNameLabel" destination="PQa-EQ-em0" id="r3U-ak-MxG"/>
+                                            <outlet property="ingredientsAmountLabel" destination="YTN-OU-Alx" id="YdY-Fv-Hya"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -59,9 +66,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5gM-aX-jve"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pXS-bA-LeE" firstAttribute="leading" secondItem="5gM-aX-jve" secondAttribute="leading" constant="10" id="Azh-2J-Qfs"/>
+                            <constraint firstItem="pXS-bA-LeE" firstAttribute="bottom" secondItem="5gM-aX-jve" secondAttribute="bottom" id="Sdy-kg-ofn"/>
+                            <constraint firstItem="5gM-aX-jve" firstAttribute="trailing" secondItem="pXS-bA-LeE" secondAttribute="trailing" constant="10" id="V36-p4-DAT"/>
+                            <constraint firstItem="pXS-bA-LeE" firstAttribute="top" secondItem="5gM-aX-jve" secondAttribute="top" constant="10" id="jXv-nf-UeV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FOOD LIST" id="2hZ-Tr-fy4">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="LNq-R9-pXj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LNq-R9-pXj">
                             <connections>
                                 <action selector="addFoodPressed:" destination="1b4-vI-eQh" id="y2D-d0-tkt"/>
                             </connections>
@@ -156,7 +169,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="C6M-W9-xXc"/>
+        <segue reference="DtA-tC-BAf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

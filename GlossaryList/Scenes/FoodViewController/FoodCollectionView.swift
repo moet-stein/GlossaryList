@@ -10,17 +10,24 @@ import UIKit
 class FoodCollectionView: UICollectionViewCell {
     
     @IBOutlet weak var foodNameLabel: UILabel!
+    @IBOutlet weak var ingredientsAmountLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        layer.borderColor = UIColor.gray.cgColor
+        layer.borderWidth = 1
         layer.cornerRadius = 10
-        layer.borderColor = CGColor(red: 1, green: 1, blue: 2, alpha: 1)
-        layer.shadowOpacity = 1
-        layer.shadowOffset = CGSize(width: 1, height: 1)
     }
+
     
     func setup(foodModel: Food) {
         foodNameLabel.text = foodModel.name
+        if let ingredientsAmount = foodModel.ingredients?.amount {
+            ingredientsAmountLabel.text = "Ingredients: \(ingredientsAmount)"
+        } else {
+            ingredientsAmountLabel.text = "Ingredients: 0"
+        }
     }
+    
+
 }
